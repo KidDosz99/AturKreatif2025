@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /seee3333cccrrr333ttttffllll44ggg.txt

@@ -1,0 +1,11 @@
+services:
+  robots-challenge:
+    container_name: robots-ctf
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./robots.txt:/usr/share/nginx/html/robots.txt
+      - ./seee3333cccrrr333ttttffllll44ggg.txt:/usr/share/nginx/html/seee3333cccrrr333ttttffllll44ggg.txt
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
