@@ -1,0 +1,35 @@
+Catchfly, Catchfly
+Evening Primrose, Pyrethrum
+Catchfly, White Lychnis
+White Lychnis, Passion Flower
+Catchfly, Alpine Dandelion
+Purple Hawkweed, Squill
+Purple Hawkweed, Catchfly
+Alpine Dandelion, Pyrethrum
+Pimpernel, Evening Primrose
+Field Marigold, Passion Flower
+Purple Hawkweed, Passion Flower
+Field Marigold, Star of Bethlehem
+Purple Hawkweed, Pyrethrum
+Field Marigold, Evening Primrose
+Field Marigold, White Lychnis
+White Lychnis, Star of Bethlehem
+Purple Hawkweed, Purple Hawkweed
+Field Marigold, Passion Flower
+Purple Hawkweed, Catchfly
+Purple Hawkweed, Passion Flower
+White Lychnis, Star of Bethlehem
+Pimpernel, Star of Bethlehem
+Purple Hawkweed, Pyrethrum
+Purple Hawkweed, Pyrethrum
+Field Marigold, Purple Hawkweed
+White Lychnis, Star of Bethlehem
+Purple Hawkweed, White Lychnis
+Pimpernel, Pimpernel
+Pimpernel, Catchfly
+White Lychnis, Star of Bethlehem
+Purple Hawkweed, White Lychnis
+Purple Hawkweed, Carnation
+Field Marigold, Carnation
+Pimpernel, Catchfly
+Alpine Dandelion, Catchfly
