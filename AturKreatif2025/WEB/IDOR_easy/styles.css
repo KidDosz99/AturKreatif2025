@@ -1,0 +1,80 @@
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #001f3f, #005f73, #009688);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+    transform: scale(1.05);
+}
+
+/* Flip Animation */
+.flip-container {
+    perspective: 1000px;
+}
+
+.card-wrapper {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Neon Text */
+.neon-text {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* Neon Buttons */
+.neon-button {
+    background: #00ffcc;
+    color: #003f5c;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+    background: #00e6b8;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Custom Input Fields */
+.custom-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 10px #00ffcc;
+}
+/* Flag Text - Black */
+#flag-container {
+    color: black !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
