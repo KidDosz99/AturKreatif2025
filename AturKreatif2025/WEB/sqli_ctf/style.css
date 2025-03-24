@@ -1,0 +1,109 @@
+body {
+    background: url('images/bg3.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.login-card {
+    width: 380px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid gold;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 0px 25px rgba(255, 215, 0, 0.5);
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+    color: gold;
+    z-index: 2;
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: gold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.form-label {
+    color: gold;
+    text-align: left;
+    display: block;
+}
+
+.form-control {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid gold;
+    color: gold;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 215, 0, 0.5);
+}
+
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #ffd700;
+    color: gold;
+    box-shadow: 0 0 5px #ffd700;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #b8860b, #ffd700);
+    border: none;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.6);
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ffd700, #b8860b);
+}
+
+/* Scrolling Quote */
+.quote-container {
+    position: absolute;
+    top: 80px; /* turun sikit dari atas */
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.moving-quote {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: gold;
+    text-shadow: 1px 1px 2px black;
+    animation: scrollText 15s linear infinite;
+    will-change: transform;
+    min-width: 100%;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* mula dari luar kanan sepenuhnya */
+    }
+    100% {
+        transform: translateX(-100%); /* keluar habis ke kiri */
+    }
+}
+
