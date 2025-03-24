@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: path_traversal_easy_container
+    ports:
+      - "8008:80"

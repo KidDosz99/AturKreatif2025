@@ -1,0 +1,1 @@
+AKCTF25{fake_flag}
