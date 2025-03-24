@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: xss_easy_container
+    ports:
+      - "8007:80"
