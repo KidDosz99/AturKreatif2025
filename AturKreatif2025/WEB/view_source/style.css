@@ -1,0 +1,50 @@
+/* Styling untuk keseluruhan laman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container utama */
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #282a36;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Tajuk */
+h1 {
+    font-size: 24px;
+    color: #ff79c6;
+}
+
+/* Button */
+button {
+    background-color: #50fa7b;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2dff57;
+}
+
+/* Hint */
+.hidden {
+    display: none;
+    color: #8be9fd;
+    font-size: 14px;
+    margin-top: 10px;
+}

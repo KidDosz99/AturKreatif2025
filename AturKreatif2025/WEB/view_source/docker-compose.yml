@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: view_source_container
+    ports:
+      - "8006:80"
