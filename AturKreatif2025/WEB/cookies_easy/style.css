@@ -1,0 +1,22 @@
+body {
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f8f9fa; /* Fallback color jika gambar tak load */
+}
+
+h1 {
+    color: #ffffff; /* Tukar kepada putih supaya jelas atas background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambah shadow untuk lebih jelas */
+}
+
+.btn-primary {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.alert {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Buat alert separa transparent */
+    border-radius: 10px;
+    padding: 10px;
+}
