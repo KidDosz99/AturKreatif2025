@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: undercover_request_container
+    ports:
+      - "8005:80"
