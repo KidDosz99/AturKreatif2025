@@ -15,7 +15,7 @@ version: "3"
 services:
   web:
     build: .
-    container_name: cookies_easy_container
+    container_name: jwt_easy_container
     ports:
       - "8009:80" 
 EOF

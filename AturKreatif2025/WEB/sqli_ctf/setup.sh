@@ -30,8 +30,6 @@ services:
       - "8004:80"
     depends_on:
       - db
-    volumes:
-      - ./:/var/www/html
     environment:
       - MYSQL_HOST=db
       - MYSQL_USER=root
