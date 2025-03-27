@@ -11,6 +11,6 @@ Easy
 N/A
 
 ## Attachments
-`conspiracy.wav`
+`conspiracy_channels.wav`
 
 ## Solution
