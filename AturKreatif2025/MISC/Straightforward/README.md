@@ -1,8 +1,8 @@
-# Straightforwards
+# Read Me
 by lalalaila
 
 ## Description
-The hiny is right in front of you. The flag is hidden a little bit. Either way, the answer is straightforward.
+I wonder if there is a command to just read and get the flag from a file.
 
 ## Difficulty
 Easy
