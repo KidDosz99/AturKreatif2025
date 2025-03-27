@@ -1,6 +1,6 @@
 import wave
 
-audio = wave.open("AturKreatif2025\\MISC\\Noisy Codes\\base_audio.wav", 'rb')
+audio = wave.open("base_audio.wav", 'rb')
 frame_bytes = bytearray(list(audio.readframes(audio.getnframes())))
 
 flag = "13 6 2 20 21 _ 20 10 8 15 10 7 10 4 2 15 21 _ 3 22 21 _ 13 16 22 5"
