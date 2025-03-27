@@ -11,6 +11,6 @@ Easy
 N/A
 
 ## Attachments
-`straightforward.gif`
+`read_me.gif`
 
 ## Solution
