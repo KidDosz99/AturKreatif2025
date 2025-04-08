@@ -1,0 +1,1 @@
+AKCTF25{crt_d3crypt10n_g0ne_wr0ng}
