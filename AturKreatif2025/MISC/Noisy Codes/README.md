@@ -4,7 +4,7 @@ by lalalaila
 ## Description
 Audio files are just encoded sound data, and data can be altered. Listen closely and find the noise.
 
-*Wrap the flag in `AKCTF{}`
+*Wrap the flag in `AKCTF25{}`
 
 ## Difficulty
 Easy
