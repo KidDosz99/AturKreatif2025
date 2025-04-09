@@ -1,0 +1,2 @@
+AKCTF25{Perdana_KLCC}
+*Case-insensitive

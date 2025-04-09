@@ -1,0 +1,2 @@
+AKCTF25{PY41_PY21_0015}
+*Case-insensitive
