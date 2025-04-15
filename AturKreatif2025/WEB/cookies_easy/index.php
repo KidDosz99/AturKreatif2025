@@ -1,5 +1,5 @@
 <?php
-$flag = "AKCTF25{Y0u_F0und_H15_C00kies_UuUUUuuU}";
+$flag = "AKCTF25{ch0c_ch1p_c00k13s_4r3_my_fav0ur1t3}";
 $showFlag = false;
 
 if (isset($_COOKIE['C0||oo||keys']) && ($_COOKIE['C0||oo||keys'] === 'true' || $_COOKIE['C0||oo||keys'] === '1')) {

@@ -1,6 +1,6 @@
 <?php
 
-$secret = 's3cr3t_k3y_j4w5_un1v3rs4l';
+$secret = 's3cr3t_k3y_j4w5_un1v3rs4llllllll';
 
 if (isset($_COOKIE['JWT'])) {
     $jwtParts = explode('.', $_COOKIE['JWT']);
@@ -47,7 +47,7 @@ function showPage($message)
 <html>
 <head>
     <title>JaWsTsss</title>
-    <!-- my sign is: s3cr3t_k3y_j4w5_un1v3rs4l -->
+    <!-- my sign is: s3cr3t_k3y_j4w5_un1v3rs4llllllll -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

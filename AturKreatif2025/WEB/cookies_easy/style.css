@@ -1,5 +1,5 @@
 body {
-    background: url('image.png') no-repeat center center fixed;
+    background: url('cookies.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #f8f9fa; /* Fallback color jika gambar tak load */
 }
