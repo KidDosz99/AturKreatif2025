@@ -1,0 +1,1 @@
+flag = AKCTF25{0d0c40213c2876d}
