@@ -1,0 +1,63 @@
+{% extends "base.html" %} {% block content %}
+<div class="nav">
+  <a href="/">KiddoszForums</a>
+  <a href="/register">Register</a>
+</div>
+
+<div class="header-section">
+  <h2>Register</h2>
+</div>
+
+<div class="info-box">
+  <p>
+    Registration is currently open. Please fill out the form below to create
+    your account.
+  </p>
+</div>
+
+<form action="/register" method="post">
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" />
+    <span class="form-note"
+      >Your username must be between 3 and 20 characters.</span
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address:</label>
+    <input type="text" id="email" name="email" />
+    <span class="form-note"
+      >We recommend using a disposable email address.</span
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+  </div>
+
+  <div class="form-group">
+    <label for="password2">Confirm Password:</label>
+    <input type="password" id="password2" name="password2" />
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" id="agree" name="agree" required />
+    <label for="agree"
+      >I agree to the <a href="/rules">forum rules</a> and policies</label
+    >
+  </div>
+
+  <div class="form-submit">
+    <input type="submit" value="Register" />
+  </div>
+</form>
+
+<div class="footer">
+  <a href="/#">KiddoszForums</a> | <a href="/#">Contact Us</a> |
+  <a href="/#">Rules & Policies</a>
+  <br />
+  Current time: 04-26-2025, 06:53 AM
+</div>
+{% endblock %}

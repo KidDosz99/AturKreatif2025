@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+<div class="nav">
+  <a href="/">KiddoszForums</a>
+  <a href="/admin">Admin</a>
+  {% if session.username %}
+  <a href="/logout" class="right-nav">Logout</a>
+  <span class="right-nav" style="margin-right: 15px"
+    >Logged in as: {{ session.username }}</span
+  >
+  {% else %}
+  <a href="/login" class="right-nav">Login</a>
+  <a href="/register" class="right-nav">Register</a>
+  {% endif %}
+</div>
+
+{% if session.username == 'admin' %} {{ flag_section|safe }} {% else %}
+<div class="info-box">
+  <p class="error-message">
+    Access denied! Only the admin user 'admin' can access this panel.
+  </p>
+</div>
+{% endif %}
+
+<div class="footer">Powered By MyBB, © 2002-2025 MyBB Group</div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% block content %}
+<div class="nav">
+  <a href="/">KiddoszForums</a>
+  {% if session.username %}
+  <a href="/logout" class="right-nav">Logout</a>
+  <span class="right-nav" style="margin-right: 15px"
+    >Logged in as: {{ session.username }}</span
+  >
+  {% else %}
+  <a href="/login" class="right-nav">Login</a>
+  <a href="/register" class="right-nav">Register</a>
+  {% endif %}
+</div>
+
+<div class="header-section">
+  <h2>{{ post.title }}</h2>
+  <p>
+    Posted by: <span class="user-link">{{ post.username }}</span> on {{
+    post.created_at }}
+  </p>
+</div>
+
+<div class="post-content">
+  <div class="post-author">
+    <div class="author-name">{{ post.username }}</div>
+    <div class="author-title">Member</div>
+    <div class="author-join">Joined: {{ post.created_at.split(' ')[0] }}</div>
+    <div class="author-posts">Posts: 1</div>
+  </div>
+  <div class="post-body">{{ post.content }}</div>
+</div>
+
+<!-- Replies -->
+{% if replies %}
+<div class="replies-section">
+  <h3>Replies</h3>
+  {% for reply in replies %}
+  <div class="post-content">
+    <div class="post-author">
+      <div class="author-name">{{ reply.username }}</div>
+      <div class="author-title">Member</div>
+      <div class="author-join">
+        Joined: {{ reply.created_at.split(' ')[0] }}
+      </div>
+      <div class="author-posts">Posts: 1</div>
+    </div>
+    <div class="post-body">
+      <div class="reply-meta">
+        Reply #{{ loop.index }} - {{ reply.created_at }}
+      </div>
+      <div class="reply-content">{{ reply.content }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %} {% if session.user_id %}
+
+<div class="quick-reply">
+  <h3>Quick Reply</h3>
+  <form action="/reply/{{ post.id }}" method="post">
+    <textarea
+      name="content"
+      rows="5"
+      placeholder="Write your reply here..."
+    ></textarea>
+    <div class="form-submit">
+      <input type="submit" value="Post Reply" />
+    </div>
+  </form>
+</div>
+{% endif %}
+
+<div class="footer">
+  <a href="/#">KiddoszForums</a> | <a href="/#">Contact Us</a> |
+  <a href="/#">Rules & Policies</a>
+  <br />
+  Current time: 04-26-2025, 06:53 AM
+</div>
+{% endblock %}
