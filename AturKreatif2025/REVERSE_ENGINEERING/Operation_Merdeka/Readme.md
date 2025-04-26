@@ -8,7 +8,7 @@
 
 ## Description
 
-There are *many* dates in Malaysia's road to independence. But only **one** opened the gates to freedom.
+There are *many* dates in Malaysia's road to independence. But only **one** opened the gates.
 
 This binary is full of misleading information — only by providing the correct historical input will you reveal the true flag hidden behind.
 
