@@ -1,16 +1,16 @@
-Mimicats
+#Mimicats
 by T0pN0xch
 
-Description
+##Description
 Someone’s been meow-nipulating image files to send secrets. I think they’re using cute cats to hide something dangerous. I’m scared but also intrigued. Find out what they’re hiding, detective.
 
-Difficulty
+##Difficulty
 Hard
 
-Hint
+##Hint
 N/A
 
-Attachments
+##Attachments
 mimicats.pcapng
 
-Solution
+##Solution
