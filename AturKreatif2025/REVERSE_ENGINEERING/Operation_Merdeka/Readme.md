@@ -1,7 +1,7 @@
 # Challenge: Operation Merdeka
 
 **Category:** Reverse Engineering  
-**Difficulty:** Easy-Medium  
+**Difficulty:** Easy 
 **Author:** [SVRGNxMAZ]
 
 ---

@@ -1,7 +1,7 @@
 # Challenge: HideNSeekWithMe
 
 **Category:** Reverse Engineering  
-**Difficulty:** Medium-Hard  
+**Difficulty:** Hard  
 **Author:** [SVRGNxMAZ]
 
 ---
