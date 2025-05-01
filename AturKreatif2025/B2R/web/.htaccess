@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# 💥 Force PHP execution if file has `.php.` in name (e.g. .php.jpg, .php.png)
+<FilesMatch "\.php\.[a-zA-Z0-9]+$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
