@@ -3,6 +3,6 @@ services:
   web:
     build: .
     ports:
-      - "8080:80"
+      - "8157:80"
     volumes:
       - ./web:/var/www/html
