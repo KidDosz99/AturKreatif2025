@@ -1,0 +1,28 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: sqli_ctf_web
+    ports:
+      - "8004:80"
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=sqli_ctf
+
+  db:
+    image: mysql:5.7
+    container_name: sqli_ctf_db
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=sqli_ctf
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
+
+volumes:
+  db_data:

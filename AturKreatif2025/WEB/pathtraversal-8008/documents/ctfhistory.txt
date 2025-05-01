@@ -1,0 +1,25 @@
+Internal Documentation: Capture The Flag (CTF) Historical Overview & File Index
+
+Introduction
+Capture The Flag (CTF) competitions have played a pivotal role in the cybersecurity community, serving as both educational platforms and battlefields for demonstrating elite hacking skills. Originating in the late 1990s, CTFs were initially designed as part of security conferences, most notably DEF CON, to allow security professionals and hobbyists to engage in real-world hacking simulations.
+
+Brief History of CTFs
+The first notable CTF took place at DEF CON 4 in 1996, where participants had to defend their own network while attacking others — a format known as attack-defense. Over time, variations such as Jeopardy-style CTFs emerged, offering challenges in categories like binary exploitation, web security, reverse engineering, cryptography, and forensics.
+
+These competitions grew in popularity due to their gamified structure and their ability to simulate real-world cyber threats. Universities, private companies, and even government bodies began to organize their own CTFs, often using them as talent pipelines or educational tools.
+
+Purpose and Format
+In a typical Jeopardy-style CTF, players or teams are presented with challenges of varying difficulties. Solving a challenge grants a "flag",usually a string that proves the solution. This flag is then submitted to a scoreboard system to gain points. Flags can be hidden in files, encoded within software, or even embedded in complex network traffic dumps.
+
+CTF Challenge File Management
+During CTF creation and testing, it is crucial to maintain an organized file structure. Each challenge usually has its own directory, which contains supporting files, configuration settings, and the actual flag stored in a protected location.
+
+This file was part of a path traversal challenge where the participant had to exploit improper input validation in a web application to access restricted files on the server. The structure of the challenge was inspired by real-world vulnerabilities, such as CVE-2019-19781 and similar path traversal issues that affected web servers and appliances globally.
+
+CTF in Education and Training
+CTFs are now widely adopted in educational institutions to supplement cybersecurity curricula. They allow students to apply theoretical knowledge in a practical, engaging environment. By solving challenges, students not only learn about existing vulnerabilities but also understand how to patch and prevent them.
+
+Conclusion
+CTFs are more than just games, they are a proving ground for the next generation of security professionals. They foster creativity, critical thinking, and collaboration. Maintaining organized and secure storage for challenge materials, such as placing sensitive files in paths like /secret_files/PT_flag.txt, ensures challenges remain fair and realistic.
+
+For challenge developers: remember to always clean up any residual flags or debug files before releasing to production environments to avoid accidental exposure.

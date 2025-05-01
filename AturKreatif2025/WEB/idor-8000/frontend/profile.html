@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>User Profile</h2>
+    <p><strong>ID:</strong> <span id="user-id"></span></p>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Class:</strong> <span id="class"></span></p>
+    <p><strong>Age:</strong> <span id="age"></span></p>
+    <p id="flag-container" style="color: green; font-weight: bold;"></p>
+    <button onclick="window.location.href='index.html'">Logout</button>
+  </div>
+
+  <script>
+    const userId = new URLSearchParams(window.location.search).get("id");
+    document.getElementById("user-id").innerText = userId;
+
+    fetch(`/api/user?id=${userId}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.error) return;
+        document.getElementById("name").innerText = data.name;
+        document.getElementById("class").innerText = data.class;
+        document.getElementById("age").innerText = data.age;
+        if (data.flag) document.getElementById("flag-container").innerText = `Flag: ${data.flag}`;
+      })
+      .catch(err => {
+        document.getElementById("flag-container").innerText = "Error loading data";
+      });
+  </script>
+</body>
+</html>
+
