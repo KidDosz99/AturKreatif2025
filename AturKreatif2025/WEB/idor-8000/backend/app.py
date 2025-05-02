@@ -11,7 +11,7 @@ users = {
     "4": {"name": "Farah", "class": "4 Delta", "age": "16"},
     "5": {"name": "Zain", "class": "5 Epsilon", "age": "17"},
     "15": {"name": "Hakim", "class": "5 Alpha", "age": "17"},
-    "83": {"name": "k!dd05z", "class": "Superuser", "age": "N/A", "flag": "AKCTF25{4cc355_w17h0u7_p3rm15510n}"}
+    "114": {"name": "k!dd05z", "class": "Superuser", "age": "N/A", "flag": "AKCTF25{4cc355_w17h0u7_p3rm15510n}"}
 }
 
 @app.route("/api/user", methods=["GET"])
