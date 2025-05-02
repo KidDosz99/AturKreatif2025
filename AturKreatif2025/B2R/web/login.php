@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             header("Location: index");
             exit;
         } else {
-            $error = "Unauthorized | usim-berjanji-pada-ibunda---2025";
+            $error = "You are not admin | usim-berjanji-pada-ibunda---2025";
         }
     }
 }
